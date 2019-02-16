@@ -2,13 +2,13 @@
 在deamon script中初始化一个Django environment
 
 ## settings.py
-#from os.path import join
-#import os.path
-#settings_path = os.path.abspath(os.path.dirname(__file__))
+from os.path import join \n
+import os.path \n
+settings_path = os.path.abspath(os.path.dirname(__file__)) \n
 
 ## deamon.py
-#import sys
-#import settings
-#from django.core.management import setup_environ
-#sys.path.append(settings.settings_path)
-#setup_environ(settings)
+import sys \n
+import settings \n
+from django.core.management import setup_environ \n
+sys.path.append(settings.settings_path) \n
+setup_environ(settings) \n
