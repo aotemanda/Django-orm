@@ -1,12 +1,14 @@
 项目中需要写一个deamon来处理，需要在deamon脚本中使用到DjangoORM来操作数据库
 在deamon script中初始化一个Django environment
 
- settings.py
+settings.py
+
 from os.path import join 
 import os.path 
 settings_path = os.path.abspath(os.path.dirname(__file__)) 
 
- deamon.py
+deamon.py
+
 import sys 
 import settings 
 from django.core.management import setup_environ 
